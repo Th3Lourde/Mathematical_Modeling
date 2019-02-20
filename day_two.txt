@@ -1,0 +1,25 @@
+
+Talking about how to find the future value of something
+
+Sequence: Function whose domain is the set of non-negatvie integers
+
+Dynamical System: Relationship among terms in a sequence
+
+Discrete vs. Continuous change
+
+discrete system: Some fixed time change <-- Difference Equations
+
+Continuous systems: dt differential equations
+
+Talk about carrying capacity
+
+Talked about Logistic Equation
+
+
+
+
+
+
+
+
+

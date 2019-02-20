@@ -1,0 +1,48 @@
+No final exam, final project
+
+Monday is usually a lecture
+
+Wed is more interactive
+
+Friday reports back to proffessor
+
+Supposed to be very workshop oriented
+
+Quick Presentations, not a lot of time
+
+Assume HW will be collected
+
+Exam April 12th
+
+
+Deterministic vs. Stochastic and Emperical vs. Mechanistic:
+
+A deterministic system is one that has no randomness
+
+A stochastic system is one that has randomness
+
+A emperical system is one that is based on observations/prior data and not all of the theory
+
+A mechanistic model is one that is based upon the theory of/behind a certain field
+
+Examples:
+
+Deterministic and Emperical: Predict Cattle growth based on food intake
+
+Stochastic and Emperical: An Analysis of variation of yields from different sites or periods of time
+
+Note: Year-to-year, or something that differs year-to-year would be a stochastic model and not an emperical model
+
+Stochastic and Mechanistic: Genetics - population growths and characteristics (Based on theory with chaos being in the system)
+
+Deterministic Mechanistic: Planetary Motion (where is the moon going to be in the sky, where is planet x going to be, etc...)
+
+----------------------------------------------------------------------------------------------------------------------------------------------------
+
+What is the goal of the model?
+
+What assumptions are we making? (Chaos no chaos) (theory no theory)
+
+
+
+
