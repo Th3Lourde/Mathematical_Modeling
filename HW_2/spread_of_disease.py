@@ -2,6 +2,7 @@
 '''
 Eli Sylvia-Lourde
 Mathematical Modeling
+HW 2
 
 Total population: 100,000 residents
 Last week there were 18 new cases
@@ -9,11 +10,6 @@ The disease lasts three weeks
 Everyone has the same odds of being exposed
 This week there are 40 new cases
 This week, it is estimated that 30% of the existing population is immune because of previous exposure.
-
-The number of infected people surpasses what should actually happen
-* Fix the number of people that get infected
-* Redo the whole thing b/c it would be faster?
-
 
 '''
 
@@ -23,28 +19,21 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 from scipy import stats
 
-
-def adjust_data(prev_data, new_data_point):
-
-    prev_data[0] = prev_data[1]
-    prev_data[1] = new_data_point
-
-    return prev_data
-
 def plot_data(data):
 
     sns.set()
 
     f, ax = plt.subplots(1, 1)
 
-    # print(data)
-
+    # Plot each line given the data
     sns.pointplot(ax=ax, x="Week_Number", y="Sick_People", data=data, color=sns.xkcd_rgb["cerulean"])
     sns.pointplot(ax=ax, x="Week_Number", y="Immune_People", data=data, color=sns.xkcd_rgb["violet"])
     sns.pointplot(ax=ax, x="Week_Number", y="Susceptible_People", data=data, color=sns.xkcd_rgb["kelly green"])
 
+    # Add Labels to the different lines
     ax.legend(handles=ax.lines[::len(data)+1],  labels=["Infected","Immune","Susceptible"])
 
+    # Add titles to the x and y axis
     plt.xlabel('Week')
     plt.ylabel('People')
 
@@ -52,27 +41,23 @@ def plot_data(data):
 
 def infection(total_pop):
 
+    # We are starting at week 2 (Really three b/c start at one)
+    # Hardcoding the
     week_num = 2
     immune = (total_pop-18)*(.3)
     sick = 58
     vulnerable_pop = total_pop - 18 - 40
 
     '''
-    Newsflash: pretend that the first week has 18 cases
-
     Correct Constant:
     40 = (100,000 - 100,000*0.3 - 18)k*18
-    sick_constant = 0.00057157
+    sick_constant = 0.000031754197111003146
 
     Assume that we are starting at week 3, since we got the data for the first two weeks
 
     '''
 
-    # sick_constant = 0.00057157/15
-    # sick_constant = 0.00003175174706050264
-    # sick_constant = 3.1754197111003146e-05
     sick_constant = 0.000031754197111003146
-    sick_constant = 0.0000031754197111003146
 
     # Sick data is the number of people that have the virus
     '''
@@ -87,42 +72,13 @@ def infection(total_pop):
     sick_data = [[0,18,18,0,0,100000-18],[1,58,40,(total_pop-18)*(.3),(total_pop-18)*(.3),100000-18-((total_pop-18)*(.3))]]
 
     # Current number of people that are susceptible
-    # print(sick_data[week_num-1][-1])
-
     susceptible = sick_data[1][-1]
 
-    # df.columns = ['Week_Number', 'Sick_People', 'Sick_Delta', 'Immune_People', 'Immune_Delta', 'Susceptible_People']
-
-
-    # How many people have the virus to start with
-
-    # Pevious data is the number of people that developed
-    # the virus for a given week, where week # is given by
-    # the index of the element. Yes, weeks start at zero.
-
-    # Change the name of this variable
-    # We no longer even need this variable
-
-    prev_data = [18,40]
-
-
-    # while(immune != total_pop):
-
-    # while(immune <= total_pop):
+    # Run model while people are still sick
     while(sick > 0):
 
+        # Old case where we had week_num < 2. Taken care of by hard-coding data
         if(week_num >= 2):
-            # People can start to get better
-
-            # delta is the number of people that just got the disease this week
-
-            # susceptible = vulnerable_pop - sick - immune
-            # susceptible = sick_data[week_num-1][-1]
-
-            # print(susceptible)
-
-            # if (susceptible < 0):
-            #     susceptible = 0
 
             '''
             The number of people that develop the disease is equal to the
@@ -134,48 +90,26 @@ def infection(total_pop):
 
             delta = (susceptible)*sick_data[week_num-1][1]*(sick_constant)
 
+            # In case the number of people that get infected > those that are susceptible
             if (delta > susceptible):
                 delta = susceptible
 
-
-            # prev_data is the number of people that are now immune
-
-            # if (sick + delta - prev_data[0] < 0):
-            #     print("Sick: {} Delta: {} Prev_Data[0]: {}".format(sick, delta, prev_data[0]))
-
-            # sick = sick + delta - prev_data[0]
-
-            # print(sick_data[week_num-1][1])
-            # print(delta)
-            # print(sick_data[week_num-2][2])
+            # For week 2, people don't get better, so we remove the getting better part
+            # of our equation from the graph.
 
             if (week_num < 3):
                 sick = sick_data[week_num-1][1] + delta
 
-            # Last term is for people getting better
-
             elif (week_num >= 3):
                 sick = sick_data[week_num-1][1] + delta - sick_data[week_num-3][2]
-                # print(sick_data[week_num-1][1])
-                # print(delta)
-                # print(sick_data[week_num-3][2])
 
-            # print(sick)
-
-            # print("Prev_Data: {} Sick_Data: {}".format(prev_data[0], sick_data[week_num-3][4]))
-            # print(week_num)
-            # print("Sick_Data: {}".format(sick_data[week_num-3][4]))
-
-
-            # immune += prev_data[0]
-
+            # Same case here
 
             if (week_num < 3):
                 immune += 0
 
             if (week_num >= 3):
                 immune += sick_data[week_num-3][2]
-
 
             # These prevent the model from producing unrealistic data-points
 
@@ -185,9 +119,8 @@ def infection(total_pop):
             if (sick<0):
                 sick = 0
 
-            # if (int(sick) == 1):
-            #     sick = 1
-
+            # This shouldn't happen b/c the number of people that get sick is
+            # based upon susceptible people, which should always be < 100000.
             if (sick>100000):
                 sick = 100000
 
@@ -196,10 +129,9 @@ def infection(total_pop):
 
                 susceptible = sick_data[week_num-1][-1]-delta
 
+                # Edge case, shouldn't happen if the model works correctly.
                 if (susceptible < 0):
                     susceptible = 0
-
-                # sick_data.append([week_num, sick, delta, immune, 0, sick_data[week_num-1][-1]-delta])
 
                 sick_data.append([week_num, sick, delta, immune, 0, susceptible])
 
@@ -210,62 +142,30 @@ def infection(total_pop):
                 if (susceptible < 0):
                     susceptible = 0
 
-                sick_data.append([week_num, sick, delta, immune, sick_data[week_num-3][2], susceptible])
 
-            # prev_data = adjust_data(prev_data, sick)
+                sick_data.append([week_num, sick, delta, immune, sick_data[week_num-3][2], susceptible])
 
             # Found the bug, was using the number of people that were sick
             # instead of the number of people that just caught the disease
 
-            # prev_data = adjust_data(prev_data, delta)
-
             week_num += 1
 
             if (int(sick)<=0):
-                # print("Immune: {} Sick: {} Total Pop: {}".format(immune, sick, total_pop))
                 break
             if (sick>=100000):
                 break
 
-            # print(int(sick))
-
-    # df = pd.DataFrame(sick_data, columns={'$a':sick_data[0],'$b':sick_data[1],'$c':sick_data[2],'$d':sick_data[3],'$e':sick_data[4], '$f':sick_data[5]})
-    # df = pd.DataFrame(sick_data, columns={'$0':sick_data[0], '$1':sick_data[1], '$2':sick_data[2], '$3':sick_data[3]})
-    # df = pd.DataFrame(sick_data, columns={'$a':sick_data[0],'$b':sick_data[1],'$c':sick_data[2],'$d':sick_data[3],'$e':sick_data[4], '$f':sick_data[5]})
-
-
-    # print(sick_data)
 
     for i in range(len(sick_data)):
         for j in range(len(sick_data[i])):
             sick_data[i][j] = round(sick_data[i][j], 3)
-        # print(sick_data[i])
-
-
-
 
     df = pd.DataFrame(sick_data, columns = ['Week_Number', 'Sick_People', 'New_Cases', 'Immune_People', 'Became_Immune', 'Susceptible_People'])
-
-
-    # df.rename({'$a':'a', '$b':'b', '$c':'c', '$d':'d', '$e':'e'}, axis='columns')
-
-
-    # print(df)
-    #
-    # df = df.rename(columns={'0': 'newName1', '1': 'newName2'})
-
-
-    # df.columns = ['Week_Number', 'Sick_People', 'New_Cases', 'Immune_People', 'Got_Better', 'Susceptible_People']
-
-    # print(df)
 
     plot_data(df)
 
     # Save Data:
     # df.to_csv(r'Disease_Data.csv')
-
-
-    # df = pd.DataFrame(sick_data, columns = ['Week', 'Sick_People', 'New_Cases', 'Immune_People', 'Became_Immune', 'Susceptible_People'])
 
 def main():
 
