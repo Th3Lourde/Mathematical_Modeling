@@ -97,9 +97,10 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi8.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm
-INPUT /home/th3lourde/Documents/College/Spring2019/Modeling/HW_2/Actual_Spread.png
-INPUT /home/th3lourde/Documents/College/Spring2019/Modeling/HW_2/Actual_Spread.png
-INPUT /home/th3lourde/Documents/College/Spring2019/Modeling/HW_2/Actual_Spread.png
+INPUT /home/th3lourde/Documents/College/Spring2019/Modeling/HW_2/Disease_Data.csv
+INPUT /home/th3lourde/Documents/College/Spring2019/Modeling/HW_2/Spread_Of_Disease.png
+INPUT /home/th3lourde/Documents/College/Spring2019/Modeling/HW_2/Spread_Of_Disease.png
+INPUT /home/th3lourde/Documents/College/Spring2019/Modeling/HW_2/Spread_Of_Disease.png
 INPUT /home/th3lourde/Documents/College/Spring2019/Modeling/HW_2/humans_win.png
 INPUT /home/th3lourde/Documents/College/Spring2019/Modeling/HW_2/humans_win.png
 INPUT /home/th3lourde/Documents/College/Spring2019/Modeling/HW_2/humans_win.png

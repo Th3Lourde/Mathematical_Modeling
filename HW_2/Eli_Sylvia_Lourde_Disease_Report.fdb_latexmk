@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1550632057 "Eli_Sylvia_Lourde_Disease_Report.tex" "/home/th3lourde/Documents/College/Spring2019/Modeling/HW_2/Eli_Sylvia_Lourde_Disease_Report.pdf" "Eli_Sylvia_Lourde_Disease_Report" 1550771521
+["pdflatex"] 1550819425 "Eli_Sylvia_Lourde_Disease_Report.tex" "/home/th3lourde/Documents/College/Spring2019/Modeling/HW_2/Eli_Sylvia_Lourde_Disease_Report.pdf" "Eli_Sylvia_Lourde_Disease_Report" 1550819426
   "/etc/texmf/web2c/texmf.cnf" 1550075948 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/th3lourde/Documents/College/Spring2019/Modeling/HW_2/Eli_Sylvia_Lourde_Disease_Report.aux" 1550632057 8 a94a2480d3289e625eea47cd1b285758 ""
+  "/home/th3lourde/Documents/College/Spring2019/Modeling/HW_2/Eli_Sylvia_Lourde_Disease_Report.aux" 1550819425 8 a94a2480d3289e625eea47cd1b285758 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1511824771 3332 103109f5612ad95229751940c61aada0 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1480098701 1324 c910af8c371558dc20f2d7822f66fe64 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm" 1480098701 1524 4414a8315f39513458b80dfc63bff03a ""
@@ -62,13 +62,14 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1520210507 32485 c64754543d8ac501bea6e75e209ea521 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1550356429 2700761 ac0584cc9514ab21918550a6948c4ee2 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1550356442 4126964 083e281c3d05340dd638a7a595753977 ""
-  "Actual_Spread.png" 1550630748 23584 daa349978b90f6e70b3ea39f00428faf ""
-  "Eli_Sylvia_Lourde_Disease_Report.aux" 1550632057 8 a94a2480d3289e625eea47cd1b285758 ""
-  "Eli_Sylvia_Lourde_Disease_Report.tex" 1550631993 6069 2763f0604405e5c63c36305757b606f2 ""
-  "humans_win.png" 1550631457 32939 5d9db54464694dead3747d0dc797f092 ""
+  "Disease_Data.csv" 1550818612 577 418f968f4abd67360eb39fee5d742d55 ""
+  "Eli_Sylvia_Lourde_Disease_Report.aux" 1550819425 8 a94a2480d3289e625eea47cd1b285758 ""
+  "Eli_Sylvia_Lourde_Disease_Report.tex" 1550819396 8214 8f62b8477abe1f705ff06566a159b01a ""
+  "Spread_Of_Disease.png" 1550819041 46085 b9c60665958ba4c2c42398bf915d56f6 ""
+  "humans_win.png" 1550819423 41453 e150be2f24f6a24a30ed4cacd0ba1370 ""
   (generated)
-  "/home/th3lourde/Documents/College/Spring2019/Modeling/HW_2/Eli_Sylvia_Lourde_Disease_Report.pdf"
-  "Eli_Sylvia_Lourde_Disease_Report.pdf"
-  "Eli_Sylvia_Lourde_Disease_Report.log"
-  "/home/th3lourde/Documents/College/Spring2019/Modeling/HW_2/Eli_Sylvia_Lourde_Disease_Report.log"
   "Eli_Sylvia_Lourde_Disease_Report.aux"
+  "Eli_Sylvia_Lourde_Disease_Report.pdf"
+  "/home/th3lourde/Documents/College/Spring2019/Modeling/HW_2/Eli_Sylvia_Lourde_Disease_Report.log"
+  "Eli_Sylvia_Lourde_Disease_Report.log"
+  "/home/th3lourde/Documents/College/Spring2019/Modeling/HW_2/Eli_Sylvia_Lourde_Disease_Report.pdf"

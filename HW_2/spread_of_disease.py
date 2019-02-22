@@ -50,7 +50,6 @@ def plot_data(data):
 
     plt.show()
 
-
 def infection(total_pop):
 
     week_num = 2
@@ -62,7 +61,7 @@ def infection(total_pop):
     Newsflash: pretend that the first week has 18 cases
 
     Correct Constant:
-    40 = (100,000 - 100000*0.3 - 18)k
+    40 = (100,000 - 100,000*0.3 - 18)k*18
     sick_constant = 0.00057157
 
     Assume that we are starting at week 3, since we got the data for the first two weeks
@@ -70,7 +69,10 @@ def infection(total_pop):
     '''
 
     # sick_constant = 0.00057157/15
-    sick_constant = 0.00003175174706050264
+    # sick_constant = 0.00003175174706050264
+    # sick_constant = 3.1754197111003146e-05
+    sick_constant = 0.000031754197111003146
+    sick_constant = 0.0000031754197111003146
 
     # Sick data is the number of people that have the virus
     '''
@@ -132,6 +134,9 @@ def infection(total_pop):
 
             delta = (susceptible)*sick_data[week_num-1][1]*(sick_constant)
 
+            if (delta > susceptible):
+                delta = susceptible
+
 
             # prev_data is the number of people that are now immune
 
@@ -180,6 +185,9 @@ def infection(total_pop):
             if (sick<0):
                 sick = 0
 
+            # if (int(sick) == 1):
+            #     sick = 1
+
             if (sick>100000):
                 sick = 100000
 
@@ -213,12 +221,13 @@ def infection(total_pop):
 
             week_num += 1
 
-            if (sick<=0):
+            if (int(sick)<=0):
                 # print("Immune: {} Sick: {} Total Pop: {}".format(immune, sick, total_pop))
                 break
             if (sick>=100000):
                 break
 
+            # print(int(sick))
 
     # df = pd.DataFrame(sick_data, columns={'$a':sick_data[0],'$b':sick_data[1],'$c':sick_data[2],'$d':sick_data[3],'$e':sick_data[4], '$f':sick_data[5]})
     # df = pd.DataFrame(sick_data, columns={'$0':sick_data[0], '$1':sick_data[1], '$2':sick_data[2], '$3':sick_data[3]})
@@ -226,6 +235,12 @@ def infection(total_pop):
 
 
     # print(sick_data)
+
+    for i in range(len(sick_data)):
+        for j in range(len(sick_data[i])):
+            sick_data[i][j] = round(sick_data[i][j], 3)
+        # print(sick_data[i])
+
 
 
 
@@ -235,7 +250,7 @@ def infection(total_pop):
     # df.rename({'$a':'a', '$b':'b', '$c':'c', '$d':'d', '$e':'e'}, axis='columns')
 
 
-    print(df)
+    # print(df)
     #
     # df = df.rename(columns={'0': 'newName1', '1': 'newName2'})
 
@@ -246,7 +261,11 @@ def infection(total_pop):
 
     plot_data(df)
 
-    # print("Done")
+    # Save Data:
+    # df.to_csv(r'Disease_Data.csv')
+
+
+    # df = pd.DataFrame(sick_data, columns = ['Week', 'Sick_People', 'New_Cases', 'Immune_People', 'Became_Immune', 'Susceptible_People'])
 
 def main():
 
