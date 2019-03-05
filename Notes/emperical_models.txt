@@ -1,0 +1,63 @@
+Emperical MOdels
+* Data suggests the model
+* Need to estimate parameters
+* Testing needed
+
+Two methods of making the models:
+* Interpolation: finding a function that contains all of the data in it.
+* Model fitting: finding a function that is close to the data, regression
+* Coefficient of determination or correlation coefficient. 
+  - Expressed at r or r^2, r:[-1,1] r^2:[0,1]
+  - We want r^2 > 0.9
+
+Different types of models:
+* Linear: y=mx + b simplest, most common, works
+  - if b is small, we can just say that y is proportional to x
+
+* Quadratic model: y= ax^2+bx+c
+ - Good approach if we have one max or one min
+
+* Cubic y = ax^3 +bx^2 +cx + d
+ - One min and one max
+
+* Quartic and higher, general polynomial functions
+ - Useful for interpolation only (means that don't use it to predict outside of the given data range)
+
+* Exponential y = ab^x yae^kx
+ - Constant relative (percent) constant growth
+ - What k is determines if the graph is increasing or decreasing
+ 
+* Logarithmic y = a+b*ln(x)
+ - b > 0, concave down, increasing
+ - b < 0, concave up, decreasing 
+
+* Logistic growth
+ - y = (c)/(1+a*e^(-bx)))
+ - Used for classification problems
+ - b > 0, reaches capacity as x --> infinity
+ - b < 0, reaches capacity at the beginning
+
+* Power functions
+ - ax^b
+ - long range growth is not as rapid as exponential growth
+
+Connecting with linear model:
+ - y = ax^b
+ - ln(y) = ln(a) + b*ln(x) 
+ - or -
+ - y = a*b^x
+ - ln(y) = ln(a) + x*ln(b)
+
+
+Linear function: y depends linearly on x
+Power function: ln(y) depends linearly on ln(x)
+Exponential function: ln(y) depends linearly on x
+Logarithmic function: y depends linearly on ln(x)
+
+
+
+
+
+
+
+

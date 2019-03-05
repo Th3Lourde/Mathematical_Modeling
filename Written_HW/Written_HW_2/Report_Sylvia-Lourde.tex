@@ -1,0 +1,171 @@
+\documentclass[12pt]{article} % article class, 12pt font
+
+% load any packages you need for more custom stuff
+\usepackage[margin=1in]{geometry} % set 1-inch margins
+\usepackage{setspace}\doublespacing % set double spacing
+\usepackage[superscript]{cite} % superscript numeric in-line citations
+\usepackage{indentfirst} % indent the first paragraph of each section
+
+\usepackage{graphicx} % enable displaying png format graphs
+\usepackage{csvsimple} % enable importing tabular data
+\usepackage{booktabs} % enable formulating tables
+
+% set title stuff
+\title{Written HW}
+\newcommand{\authors}{Eli Sylvia-Lourde}
+\author{Section 3.2 \#'s 2a, 2b, 2c \\ Section 3.3 \#'s 4, 9, 10}
+% \author{Section 3.3 #'s 4, 9, 10}
+\date{March 6th, 2019}
+
+% start the actual document
+\begin{document}
+
+% create title stuff
+\hfill\authors % write the authors right-aligned
+%\vspace{-0.5in} % reduce space before title
+{\let\newpage\relax\maketitle} % print title
+
+\section*{3.2 \#'s 2a, 2b, 2c}
+% \subsection{2.2 Hello World}
+For these three problems, we are tasked with writing a mathematical model that minimizes the largest deviation between the data and the line $\hat{y}=ax+b$. We do this by solving for the estimates of a and b via the following definitions:
+\[a = \frac{n\sum_{i=1}^{n}x_{i}y_{i}-\sum_{i=1}^{n}x_{i}\sum_{i=1}^{n}y_{i}}{n\sum_{i=1}^{n}x_{i}^2-(\sum_{i=1}^{n}x_{i})^2}\]
+
+\[b = \frac{\sum_{i=1}^{n}x_{i}^2\sum_{i=1}^{n}y_{i}-\sum_{i=1}^{n}x_{i}y_{i}\sum_{i=1}^{n}x_{i}}{n\sum_{i=1}^{n}x_{i}^2-(\sum_{i=1}^{n}x_{i})^2}\]
+
+We judge how good our line is by using least squares:
+\[\sum_{i=1}^{n}(y_{i}-\hat{y}_{i})^2\]
+
+\textbf{Data for 2a:}
+
+{\centering
+\csvautobooktabular{2a.csv}
+\\}
+
+Using our definitions for a and b, we get the following equation (rounded after 3 digits):
+\[\hat{y}=0.564x+2.215\]
+This has a least squares score of: 12508.995.
+
+\textbf{Data for 2b:}
+
+
+{\centering
+\csvautobooktabular{2b.csv}
+\\}
+
+Using our definitions for a and b, we get the following equation (rounded after 3 digits):
+\[\hat{y}=0.00164x+0.00293\]
+This has a least squares score of: 118346.107
+
+
+\textbf{Data for 2c:}
+
+{\centering
+\csvautobooktabular{2c.csv}
+\\}
+
+Using our definitions for a and b, we get the following equation (rounded after 3 digits):
+\[\hat{y}=0.969x+1.893\]
+This has a least squares score of: 7287.636
+
+
+\section*{3.3 \#'s 4,9,10}
+
+\textbf{4) Make an appropriate transformation to fit the model $P=ae^{bt}$ using Equation (3.4). Estimate a and b.}
+
+In order to do this, we use equation 3.8 and the definitions that accompany it.
+
+\[ln(y)=ln(\alpha)+m ln(x)\]
+\[y=\alpha+xe^n\]
+
+\[m = \frac{n\sum_{i=1}^{n}ln(x_{i})ln(y_{i})-(\sum_{i=1}^{n}ln(x_{i}))(\sum_{i=1}^{n}ln(y_{i}))}{n\sum_{i=1}^{n}(ln(x_{i})^2)-(\sum_{i=1}^{n}ln(x_{i}))^2} \]
+
+\[ln\alpha = \frac{\sum_{i=1}^{n}(ln(x_{i})^2)(ln(y_{i}))-\sum_{i=1}^{n}(ln(x_{i})ln(y_{i}))\sum_{i=1}^{n}(ln(x_{i}))}{n\sum_{i=1}^{n}(ln(x_{i})^2)-(\sum_{i=1}^{n}ln(x_{i})^2)} \]
+
+Data for 4:
+
+{\centering
+\csvautobooktabular{4.csv}
+\\}
+
+
+Using our definitions for m and ln($\alpha$), we get the following equation (rounded after 3 digits):
+\[\hat{y}=0.09727 + xe^{0.010207}\]
+
+This has a least squares score of: 326010.755
+\\
+
+\textbf{9) Given the data for the ponderosa pine, make models of the following form:}
+\begin{itemize}
+  \item
+  $y=ax+b$
+  \item
+  $y=ax^2$
+  \item
+  $y=ax^3$
+  \item
+  $y=ax^3+bx^2+c$
+\end{itemize}
+
+Data for 9:
+
+{\centering
+\csvautobooktabular{9.csv}
+\\}
+
+\textbf{y=ax+b :}
+\\
+Using the previous methods, we get the following equation:
+\[y = 10.433x-175.704 \]
+
+This has a least squares score of: 277541.645
+
+\textbf{ y=ax**2 :} // There was a latex bug that prevented me from doing ax^2
+\\
+% Using the following methods
+
+
+We use the following equation to get our a:
+\[a = \frac{\sum_{i=0}^{n} x_{i}^n y_{i}}{\sum_{i=0}^{n}x_{i}^{2n}} \]
+
+
+According to our implementation, a = 0.147. This results in a least squares of: 5185.290.
+
+\textbf{ y=ax**3 :} \\
+According to our implementation, a = 0.00412. This results in a least squares of 298132.235
+
+
+\textbf{ y=ax**3+bx**2+c:} \\
+
+Since this equation has degree of three, we use 4 points when constructing our lagrange multiplier:
+
+\[19\frac{(x-19)(x-20)(x-22)}{(17-19)(17-20)(17-22)}+25\frac{(x-17)(x-20)(x-22)}{(19-17)(19-20)(19-22)}+32\frac{(x-17)(x-19)(x-22)}{(20-17)(20-19)(20-22)}\]
+
+\[+51\frac{(x-17)(x-19)(x-20)}{(22-17)(22-19)(22-20)}}\]
+
+Using this method we get a least squares of 738883.844.
+
+___
+___
+___
+\\
+\\
+\\
+
+\textbf{10) Using the data below, fit it to the model y=ax**(3/2)}
+
+
+{\centering
+\csvautobooktabular{10.csv}
+\\}
+
+Using this methods we get $0.667x^{14.219}$
+
+The least squares for this is 1.672148106802607e+38
+
+
+
+
+
+
+
+\end{document} % this ends your document
