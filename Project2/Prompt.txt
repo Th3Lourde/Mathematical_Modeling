@@ -1,0 +1,21 @@
+
+People are rowing a boat. There is an idea that the more oarsmen that there are in a boat, the faster that the boat will travel.
+
+Investigate whether or not there is a mathematical relationship between the speed of a boat and the number of crew members.
+
+Assumptions:
+- The total force exerted by the crew is constant for a particular crew throughout the race
+- The drage force experienced by the boat as it moves through the water is proportional to the square of the velocity times the wet surface area of the hull
+- Work is defined as force times distance. Power is defined as work per unit time
+
+
+
+Is there a mathematical relationship between the speed of the boat and the number of crew members in the boat?
+
+What we can do is prove that the more crew members there are in the boat, the higher the power output of the boat is. 
+
+Create a mathematical model that predicts the work of the boat given the number of crew members. Use this model to predict time.
+
+Create another mathematical model that predicts the power of the boat given the number of crew members. Use this model to predict time.
+
+It would make more sense that power is more reasonable than force becu
