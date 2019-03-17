@@ -40,7 +40,7 @@ changes	that	could	affect	the	playing	time.
 In order to solve this problem, we are going to simulate how many turns it takes to play the game. Using this data, we will then simulate how many total turns it takes 2,4,6 people to play the game. We will then convert this to time based upon who is playing the game. Our answer will be an estimation of how long it takes adults, children and adults, and just children. Our final answer will be an equation that takes the number of adults and children playing the game and return how long it will take them to finish.
 
 \section*{Modeling}
-First we need to figure out how many rolls it takes, on average, to complete the game. Every player starts on square zero, rolls a d6, and then moves to the next square based upon what square they landed on. If the square that they are on + their roll > 100, they stay where they are. If the sum = 100, they finish playing the game. Below is the code for modeling this:
+First we need to figure out how many rolls it takes, on average, to complete the game. Every player starts on square zero, rolls a d6, and then moves to the next square based upon what square they landed on. If the square that they are on + their roll is greater than 100, they stay where they are. If the sum = 100, they finish playing the game. Below is the code for modeling this:
 
 \begin{verbatim}
 def roll_d6():
@@ -106,5 +106,7 @@ Our model estimates that the average number of roles is 39. Using this, we can w
 
 \section*{Changing Play Time}
 A few things could be done to change the play time. If we wanted to increase the play time, we could decrease the magnitude of all ladders by 1 everytime someone landed on a ladder and increase the magnitude of all chutes by 1 everytime someone landed on a chute. We could flip this if we wanted to decrease the play time. For both examples, we would need to bound the chutes and ladders so that they could not go below 1 or above 100. If we wanted to increase the play time, we could allow people whose roll directs them to a position greater than 100 back to that position minus 100. This would result in them effectively restarting the game, which would certainly increase the play time. We could also move around where the chutes and ladders are positioned. If we wanted to make it very difficult to get beyond a certain square, we could put 5 chutes in a row, giving the player a 1 in 6 shot of making it through, depending how far away they were from the first chute. We could of course do the same thing with ladders if we wanted to make a particular section very easy.
+
+As per usual, all of my code and such is on my github. This project is under Th3Lourde Mathematical Modeling Project 3 . If I messed the path to my project, I would of course be more than happy to provide the correct one. (Note the path provided is missing some underscores due to how latex handles them).
 
 \end{document} % this ends your document
