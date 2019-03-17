@@ -177,8 +177,8 @@ def graph_differences(data,y_hat):
 
     x1 = [1,1+2/6,1+3/6,1+4/6,1+5/6,1+5.8/6]
     x2 = [2,2+2/6,2+3/6,2+4/6,2+5/6,2+5.8/6]
-    x3 = [3,3+2/6,3+3/6,3+4/6,3+5/6,3+5.8/6]
-    x4 = [4,4+2/6,4+3/6,4+4/6,4+5/6,4+5.8/6]
+    x3 = [4,4+2/6,4+3/6,4+4/6,4+5/6,4+5.8/6]
+    x4 = [8,8+2/6,8+3/6,8+4/6,8+5/6,8+5.8/6]
 
 
     sns.set()
@@ -230,14 +230,19 @@ def compare_to_normal_data():
     a = 104.38298143764881
     b = -188.03775163057534
 
+    diff = diff_constants[0]
+
     for i in range(len(boys_in_boat)):
         for j in range(6):
-            projected_power = a*boys_in_boat[i]+b - diff_constants[j]
+            projected_power = a*boys_in_boat[i]+b - diff*boys_in_boat[i]
             '''
             Only care about projected power, since it is
             proportional to time
             '''
             y_hat[i].append(projected_power)
+            if (j <= 4):
+                # diff = np.add(diff, y_hat.iloc[i,j], dtype='float64')
+                diff = diff - diff_constants[j+1]
 
             # print("Seconds: {}".format(seconds.iloc[i,j+2]))
             # if (seconds.iloc[i,j+2] != 0):

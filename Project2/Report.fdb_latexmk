@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1552007349 "Report.tex" "/home/th3lourde/Documents/College/Spring2019/Modeling/Project2/Report.pdf" "Report" 1552007350
+["pdflatex"] 1552063954 "Report.tex" "/home/th3lourde/Documents/College/Spring2019/Modeling/Project2/Report.pdf" "Report" 1552786467
   "/etc/texmf/web2c/texmf.cnf" 1550075948 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/th3lourde/Documents/College/Spring2019/Modeling/Project2/Report.aux" 1552007350 8 a94a2480d3289e625eea47cd1b285758 ""
+  "/home/th3lourde/Documents/College/Spring2019/Modeling/Project2/Report.aux" 1552063954 8 a94a2480d3289e625eea47cd1b285758 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1511824771 3332 103109f5612ad95229751940c61aada0 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1480098701 1324 c910af8c371558dc20f2d7822f66fe64 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm" 1480098701 1524 4414a8315f39513458b80dfc63bff03a ""
@@ -63,18 +63,18 @@
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1550356429 2700761 ac0584cc9514ab21918550a6948c4ee2 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1550356442 4126964 083e281c3d05340dd638a7a595753977 ""
   "Linear_Line_Done_Correctly.png" 1551843820 23632 b6e93a1cb11bf965b1eddce5e7630781 ""
-  "Report.aux" 1552007350 8 a94a2480d3289e625eea47cd1b285758 ""
-  "Report.tex" 1552007349 9945 53672c6f351bb65c5d92bafb1f3aaaad ""
+  "Report.aux" 1552063954 8 a94a2480d3289e625eea47cd1b285758 ""
+  "Report.tex" 1552063949 10200 992dae6ee1a6b060fd42a4d1b4ddc929 ""
   "boat_data.csv" 1551976455 204 cde1b6bc11fb3fdd7be3fedccc5b34ce ""
   "diff.csv" 1551996913 231 39cc559b88444ae8854ef438d0a0dbd0 ""
   "expected.csv" 1552005996 354 3d3dae752bbb244c9e80a3d4b217914a ""
   "fatigue_data.csv" 1551999128 79 eef597f2a46ee153f1c2d708f4bf822f ""
-  "modeling_results.png" 1552005544 30425 e8b35f1596b28709bc4936247dd19fe0 ""
+  "modeling_results.png" 1552063854 30530 150c126dc65d78da72f1f7ab8b253239 ""
   "power_boat_data.csv" 1551990880 246 52c2c7753a92a09078f113e7603a1571 ""
   "y_hat.csv" 1552006071 370 9b05b099daef0b4a782a87e5217ceb60 ""
   (generated)
   "Report.aux"
+  "/home/th3lourde/Documents/College/Spring2019/Modeling/Project2/Report.log"
   "/home/th3lourde/Documents/College/Spring2019/Modeling/Project2/Report.pdf"
   "Report.log"
-  "/home/th3lourde/Documents/College/Spring2019/Modeling/Project2/Report.log"
   "Report.pdf"

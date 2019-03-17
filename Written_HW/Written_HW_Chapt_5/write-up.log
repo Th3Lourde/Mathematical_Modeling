@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.2.16)  8 MAR 2019 08:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.2.16)  11 MAR 2019 22:04
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**Report.tex
-(/home/th3lourde/Documents/College/Spring2019/Modeling/Project2/Report.tex
+**write-up.tex
+(/home/th3lourde/Documents/College/Spring2019/Modeling/Written_HW/Written_HW_Chapt_5/write-up.tex
 LaTeX2e <2017-04-15>
 Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
@@ -116,21 +116,30 @@ Package: booktabs 2016/04/27 v1.618033 publication quality tables
 ) (/usr/share/texlive/texmf-dist/tex/latex/tabto-ltx/tabto.sty
 Package: tabto 2013/03/25  v 1.3  Another tabbing mechanism
 \CurrentLineWidth=\dimen126
-) (/home/th3lourde/Documents/College/Spring2019/Modeling/Project2/Report.aux)
-\openout1 = `Report.aux'.
+) (/usr/share/texlive/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
+Package: fancyvrb 2008/02/07
+ Style option: `fancyvrb' v2.7a, with DG/SPQR fixes, and firstline=lastline fix <2008/02/07> (tvz)
+\FV@CodeLineNo=\count98
+\FV@InFile=\read2
+\FV@TabBox=\box26
+\c@FancyVerbLine=\count99
+\FV@StepNumber=\count100
+\FV@OutFile=\write4
+) (/home/th3lourde/Documents/College/Spring2019/Modeling/Written_HW/Written_HW_Chapt_5/write-up.aux)
+\openout1 = `write-up.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -168,16 +177,16 @@ LaTeX Font Info:    ... okay on input line 20.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count98
+\scratchcounter=\count101
 \scratchdimen=\dimen127
-\scratchbox=\box26
-\nofMPsegments=\count99
-\nofMParguments=\count100
+\scratchbox=\box27
+\nofMPsegments=\count102
+\nofMParguments=\count103
 \everyMPshowfont=\toks19
-\MPscratchCnt=\count101
+\MPscratchCnt=\count104
 \MPscratchDim=\dimen128
-\MPnumerator=\count102
-\makeMPintoPDFobject=\count103
+\MPnumerator=\count105
+\makeMPintoPDFobject=\count106
 \everyMPtoPDFconversion=\toks20
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
@@ -218,159 +227,31 @@ Package grfext Info: Graphics extension search list:
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <14.4> on input line 25.
+(Font)              <14.4> on input line 27.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 25.
-Missing character: There is no â in font cmr12!
-Missing character: There is no € in font cmr12!
-Missing character: There is no ” in font cmr12!
+(Font)              <7> on input line 27.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 42.
+(Font)              <12> on input line 31.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 42.
+(Font)              <8> on input line 31.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 42.
+(Font)              <6> on input line 31.
  [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2]
-Underfull \hbox (badness 10000) in paragraph at lines 65--67
-
- []
-
-[3]
-<Linear_Line_Done_Correctly.png, id=19, 462.528pt x 346.896pt>
-File: Linear_Line_Done_Correctly.png Graphic file (type png)
-<use Linear_Line_Done_Correctly.png>
-Package pdftex.def Info: Linear_Line_Done_Correctly.png  used on input line 78.
-(pdftex.def)             Requested size: 462.52686pt x 346.89514pt.
-
-Overfull \hbox (10.39665pt too wide) in paragraph at lines 78--79
-[][] 
- []
-
-[4] [5 </home/th3lourde/Documents/College/Spring2019/Modeling/Project2/Linear_Line_Done_Correctly.png>]
-/home/th3lourde/Documents/College/Spring2019/Modeling/Project2/Report.tex:92: Missing $ inserted.
-<inserted text> 
-                $
-l.92 _
-      
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-/home/th3lourde/Documents/College/Spring2019/Modeling/Project2/Report.tex:93: Missing { inserted.
-<to be read again> 
-                   \let 
-l.93 \\
-       
-A left brace was mandatory here, so I've put one in.
-You might want to delete and/or insert some corrections
-so that I will find a matching right brace soon.
-(If you're confused by all this, try typing `I}' now.)
-
-/home/th3lourde/Documents/College/Spring2019/Modeling/Project2/Report.tex:94: Missing $ inserted.
-<inserted text> 
-                $
-l.94 
-     
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-/home/th3lourde/Documents/College/Spring2019/Modeling/Project2/Report.tex:94: Missing } inserted.
-<inserted text> 
-                }
-l.94 
-     
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-
-/home/th3lourde/Documents/College/Spring2019/Modeling/Project2/Report.tex:104: LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.104 _
-       
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-/home/th3lourde/Documents/College/Spring2019/Modeling/Project2/Report.tex:104: Missing $ inserted.
-<inserted text> 
-                $
-l.104 _
-       
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-/home/th3lourde/Documents/College/Spring2019/Modeling/Project2/Report.tex:105: Missing { inserted.
-<to be read again> 
-                   \par 
-l.105 
-      
-A left brace was mandatory here, so I've put one in.
-You might want to delete and/or insert some corrections
-so that I will find a matching right brace soon.
-(If you're confused by all this, try typing `I}' now.)
-
-/home/th3lourde/Documents/College/Spring2019/Modeling/Project2/Report.tex:105: Missing $ inserted.
-<inserted text> 
-                $
-l.105 
-      
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-/home/th3lourde/Documents/College/Spring2019/Modeling/Project2/Report.tex:105: Missing } inserted.
-<inserted text> 
-                }
-l.105 
-      
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-[6] [7]
-<modeling_results.png, id=36, 462.528pt x 346.896pt>
-File: modeling_results.png Graphic file (type png)
-<use modeling_results.png>
-Package pdftex.def Info: modeling_results.png  used on input line 134.
-(pdftex.def)             Requested size: 462.52686pt x 346.89514pt.
-
-Overfull \hbox (10.39665pt too wide) in paragraph at lines 134--135
-[][] 
- []
-
-
-Overfull \hbox (44.2174pt too wide) in paragraph at lines 139--140
-\OT1/cmr/m/n/12 the fol-low-ing link: $\OML/cmm/m/it/12 https \OT1/cmr/m/n/12 : \OML/cmm/m/it/12 ==github:com=Th\OT1/cmr/m/n/12 3\OML/cmm/m/it/12 Lourde=Mathematical[]odeling=tree=master=Project\OT1/cmr/m/n/12 2$ 
- []
-
-[8 </home/th3lourde/Documents/College/Spring2019/Modeling/Project2/modeling_results.png>]
-Overfull \hbox (40.56516pt too wide) in paragraph at lines 141--144
-[]\OT1/cmr/m/n/12 If the link is bro-ken, my user ac-count is called "Th3Lourde" The repo is $"\OML/cmm/m/it/12 Mathematical[]odeling\OT1/cmr/m/n/12 "$
- []
-
-[9] (/home/th3lourde/Documents/College/Spring2019/Modeling/Project2/Report.aux) ) 
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] [3] [4] (/home/th3lourde/Documents/College/Spring2019/Modeling/Written_HW/Written_HW_Chapt_5/write-up.aux) ) 
 Here is how much of TeX's memory you used:
- 3454 strings out of 492982
- 61301 string characters out of 6134896
- 125711 words of memory out of 5000000
- 6965 multiletter control sequences out of 15000+600000
- 8194 words of font info for 29 fonts, out of 8000000 for 9000
+ 3743 strings out of 492982
+ 65439 string characters out of 6134896
+ 131166 words of memory out of 5000000
+ 7259 multiletter control sequences out of 15000+600000
+ 8363 words of font info for 30 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,6n,46p,1215b,236s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on /home/th3lourde/Documents/College/Spring2019/Modeling/Project2/Report.pdf (9 pages, 143442 bytes).
+ 41i,6n,46p,823b,285s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on /home/th3lourde/Documents/College/Spring2019/Modeling/Written_HW/Written_HW_Chapt_5/write-up.pdf (4 pages, 92396 bytes).
 PDF statistics:
- 71 PDF objects out of 1000 (max. 8388607)
- 47 compressed objects within 1 object stream
+ 53 PDF objects out of 1000 (max. 8388607)
+ 37 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
