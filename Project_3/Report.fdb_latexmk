@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1552802635 "Report.tex" "/home/th3lourde/Documents/College/Spring2019/Modeling/Project_3/Report.pdf" "Report" 1552802635
+["pdflatex"] 1552880644 "Report.tex" "/home/th3lourde/Documents/College/Spring2019/Modeling/Project_3/Report.pdf" "Report" 1552880644
   "/etc/texmf/web2c/texmf.cnf" 1550075948 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/th3lourde/Documents/College/Spring2019/Modeling/Project_3/Report.aux" 1552802635 8 a94a2480d3289e625eea47cd1b285758 ""
+  "/home/th3lourde/Documents/College/Spring2019/Modeling/Project_3/Report.aux" 1552880644 8 a94a2480d3289e625eea47cd1b285758 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1511824771 3332 103109f5612ad95229751940c61aada0 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1480098701 1324 c910af8c371558dc20f2d7822f66fe64 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm" 1480098701 1524 4414a8315f39513458b80dfc63bff03a ""
@@ -62,12 +62,12 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1520210507 32485 c64754543d8ac501bea6e75e209ea521 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1550356429 2700761 ac0584cc9514ab21918550a6948c4ee2 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1550356442 4126964 083e281c3d05340dd638a7a595753977 ""
-  "Modeling.png" 1552799403 72716 d783e4facb5ce52ad29e789eea5dfe66 ""
-  "Report.aux" 1552802635 8 a94a2480d3289e625eea47cd1b285758 ""
-  "Report.tex" 1552802634 6225 1248a104645c6483428a785db7b02dab ""
+  "Modeling.png" 1552880638 75182 765ded865e6dc918f8dda994bf33146a ""
+  "Report.aux" 1552880644 8 a94a2480d3289e625eea47cd1b285758 ""
+  "Report.tex" 1552880607 6423 c4bd0b96513db598f2c0d3af8b9e08fa ""
   (generated)
+  "Report.pdf"
+  "/home/th3lourde/Documents/College/Spring2019/Modeling/Project_3/Report.pdf"
+  "/home/th3lourde/Documents/College/Spring2019/Modeling/Project_3/Report.log"
   "Report.aux"
   "Report.log"
-  "/home/th3lourde/Documents/College/Spring2019/Modeling/Project_3/Report.pdf"
-  "Report.pdf"
-  "/home/th3lourde/Documents/College/Spring2019/Modeling/Project_3/Report.log"
