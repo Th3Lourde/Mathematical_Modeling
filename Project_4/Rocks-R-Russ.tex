@@ -1,0 +1,82 @@
+\documentclass[12pt]{article} % article class, 12pt font
+
+% load any packages you need for more custom stuff
+\usepackage[margin=1in]{geometry} % set 1-inch margins
+\usepackage{setspace}\doublespacing % set double spacing
+\usepackage[superscript]{cite} % superscript numeric in-line citations
+\usepackage{indentfirst} % indent the first paragraph of each section
+\usepackage{graphicx} % enable displaying png format graphs
+\usepackage{csvsimple} % enable importing tabular data
+\usepackage{booktabs} % enable formulating tables
+\usepackage{tabto} % allows you to tab stuff
+% \newcommand\tab[1][1cm]{\hspace*{#1}}
+
+
+
+% set title stuff
+\title{Rocks-R-Russ}
+\newcommand{\authors}{Eli Sylvia-Lourde}
+\author{Math 114 Mathematical Modeling\\St. Mary's College}
+\date{April 8th 2019}
+
+\begin{document}
+
+% create title stuff
+\hfill\authors % write the authors right-aligned
+%\vspace{-0.5in} % reduce space before title
+{\let\newpage\relax\maketitle} % print title
+
+\section*{Problem Statement}
+Rocks-R-Russ is currently excavating three sites and filling four sites in support of a large construction project. Excavations at sites A,B and C are producing 150, 400, and 325 cubic yards of dirt per day, respectively. The fill sites D, E, F and G require 175, 125, 225, and 450 cubic yards of dirt per day. Fill dirt can also be purchased from a source H at a cost of 5 dollars per cubic yard. The cost of shipping fill dirt is about 20 dollars per mile for a truckload of 10 cubic yards. Below is a table that shows the distance from varying sites:
+
+
+\begin{center}
+\begin{tabular}{ |c|c|c|c|c| }
+ \hline
+  * & Des & tin & ati & ons \\
+  Source & D & E & F & G \\
+  A & 5 & 2 & 6 & 10 \\
+  B & 4 & 5 & 7 & 5  \\
+  C & 7 & 6 & 4 & 4  \\
+  H & 9 & 10 & 6 & 2  \\
+ \hline
+\end{tabular}
+\end{center}
+
+\section*{Commentary}
+In this problem, we are trying to minimize the cost of moving the dirt from the different sites. In this model, we will be experimenting with full or semi-full truckloads. This means that we are assuming the fullness of the truck is proportional to the cost of transportation. We will also be assuming that we must meet the exact requirements of each site. We cannot overfill or over excavate. We will be using linear programming to solve this problem.
+
+\section*{Primal Objective}
+Our primal requires an objective function as well as contraints. In this case, our objective function is the cost of moving dirt. Our primal will have 16 variables. Each variable maps a source to a sink. There are four sources and 4 sinks, so there will be 16 unique variables. For all sources except H, we calculate how much 1/10th of a truckload would cost to ship to our sink. The calculations for this are simply the distance multiplied by the price/mile of a single cubic yard: $\$20/10 = 2$ dollars per mile for a truck containing a single cubic yard of dirt. Thus, the coefficients of 12 out of our 16 variables is the distance time 2. For variables 13-16, we must also factor in the cost it takes to buy the dirt needed. Since our conversion is based upon a single cubic yard, we add the cost of a single cubic yard to our coefficient.
+
+\section*{Primal Constraint}
+Our constraints are based upon how much dirt can come from our sources as well as how much dirt can be dumped at our sinks. When running the primal, we set the sum of the dirt equal to the limitation mentioned in the problem statement. This led to the dual having a lower price than our primal. After some experimentation, it was discovered that if we assumed we could over excavate or over dump our work sites, our dual would match the primal. The result of changing this assumption resulted in a price decrease of 100 dollars.
+
+\section*{Primal/Dual}
+Depending on how we tweak our initial assumptions, our cost will either be \$7850 or \$7950. Upon further inspection, it was discovered that the price of the primal increases if we increase the amount of dirt we can excavate from C by 100 cubic yards. When this limitation is removed, our model no longer needs to use site H as a resource for dirt.
+
+\section*{Primal/Dual Analysis}
+If we had the option of changing how much dirt we could excavate from one of our sites, being able to excavate more dirt from site C would remove any dependence on site H. If we could change the limitations on site F and G, our dual suggests that this would reduce costs. If we had to pick between editing the sources vs the sinks, the dual puts both sinks at an 8 while our highest source at 4. Thus if given the option to edit only one we would change the constraints on one, we would choose our sink.
+
+\section*{Shadow Prices, Proposed Plan}
+Changing our constraint on A 100 up or 100 down increases our price by 400. Changing our constraint on B 100 up or 100 down sets our price equal to our dual (\$7850) or increases it by 200. Here is a table to showcase how changing certain limitations can affect our bottom line, the values in price reflect the delta or change.
+
+\begin{center}
+\begin{tabular}{ |c|c|c| }
+ \hline
+  Name & -100 & +100 \\
+  A & +300 & +300  \\
+  B & -100 & +100  \\
+  C & +100 & -100  \\
+  D & -700 & +700  \\
+  E & +100 & +700  \\
+  F & -900 & +900  \\
+  G & -900 & +900  \\
+ \hline
+\end{tabular}
+\end{center}
+
+I would propose that we allow between 425-439 cubic yards of dirt be excavated from site C. There is no extra benefit from allowing more than 425 cubic yards to be excavated from the site. If more than 439 cubic yards are excavated, the pro's of increasing excavation levels rapidly diminish. If there is a downside of producing the extra 100 cubic yards, produce 425. If there is an upside, produce 439. This should reduce cost by \$100.
+
+
+ \end{document} % this ends your document

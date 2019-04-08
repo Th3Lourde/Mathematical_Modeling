@@ -46,12 +46,26 @@ s2 = lp.LpVariable("Slack 2", 0)
 s3 = lp.LpVariable("Slack 3", 0)
 
 #Set up the objective function
+# prob += 325*x1 + 255*x2 + 342.50*x3, "Total Profit"
+
+# Change profit of lettuce
 prob += 325*x1 + 255*x2 + 342.50*x3, "Total Profit"
 
+# irrigation = 2000 - 2000*.10
+irrigation = 2000
+land = 1000 + 200
+labor = 688 - 25
+
+# Ratio land to labor = 2:1
+
 # Define the constraints
-prob += 2*x1 + 1.6*x2 + 2.4*x3 + s1 <= 2000, "Paper consumption limit"
-prob += 0.75*x1 + 0.55*x2 + 0.80*x3 + s2 <= 688, "Ink consumption limit"
-prob += x1 + x2 + x3 + s3 <= 1000, "Production time limit"
+prob += 2*x1 + 1.6*x2 + 2.4*x3 <= irrigation, "Paper consumption limit"
+prob += 0.75*x1 + 0.55*x2 + 0.80*x3 <= labor, "Ink consumption limit"
+prob += x1 + x2 + x3 <= land, "Production time limit"
+
+prob += 2*x1 + 1.6*x2 + 2.4*x3 + s1 == irrigation, "a"
+prob += 0.75*x1 + 0.55*x2 + 0.80*x3 + s2 == labor, "b"
+prob += x1 + x2 + x3 + s3 == land, "c"
 
 # Solve the problem
 prob.solve()
